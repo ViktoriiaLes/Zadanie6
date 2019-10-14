@@ -31,6 +31,7 @@ public class TestProduct {
         System.out.println("Wprowadz cene productu bez VAT");
         double priceNoTax = scanner.nextDouble();
         scanner.nextLine();
+        scanner.close();
         calcAndPrintVat(new Product(productName, description, category, priceNoTax));
     }
 
